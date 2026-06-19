@@ -99,6 +99,6 @@ PlantPulse turns raw machine and energy data into actionable intelligence for in
 <!-- ===== ANIMATED FOOTER ===== -->
 <div align="center">
 
-<img src="./footer.svg" width="100%" alt="Let's build something that lasts"/>
+<img src=".footer.svg" width="100%" alt="Let's build something that lasts"/>
 
 </div>
