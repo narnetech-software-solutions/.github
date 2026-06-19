@@ -1,36 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-label="NarneTech Software Solutions">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-label="NarneTech Software Solutions terminal">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#004e94">
-        <animate attributeName="stop-color" values="#004e94;#0078D7;#00C6FF;#0078D7;#004e94" dur="7s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#00C6FF">
-        <animate attributeName="stop-color" values="#00C6FF;#0078D7;#004e94;#0078D7;#00C6FF" dur="7s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.22"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="round"><rect x="0" y="0" width="1200" height="220" rx="18"/></clipPath>
+    <clipPath id="winH"><rect x="2" y="2" width="1196" height="216" rx="14"/></clipPath>
+    <clipPath id="typeH">
+      <rect x="80" y="92" width="0" height="40">
+        <animate attributeName="width" values="0;470;470;0;0" keyTimes="0;0.42;0.64;0.82;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
   </defs>
-  <g clip-path="url(#round)">
-    <rect width="1200" height="220" fill="url(#bg)"/>
-    <path fill="#ffffff" opacity="0.10" d="M-200 180 q50 -22 100 0 q50 22 100 0 q50 -22 100 0 q50 22 100 0 q50 -22 100 0 q50 22 100 0 q50 -22 100 0 q50 22 100 0 q50 -22 100 0 q50 22 100 0 q50 -22 100 0 q50 22 100 0 q50 -22 100 0 q50 22 100 0 q50 -22 100 0 q50 22 100 0 V220 H-200 Z">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="7s" repeatCount="indefinite"/>
-    </path>
-    <path fill="#ffffff" opacity="0.07" d="M-200 195 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 V220 H-200 Z">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="4.5s" repeatCount="indefinite"/>
-    </path>
-    <g fill="#ffffff" opacity="0.08">
-      <circle cx="150" cy="58" r="44"><animate attributeName="cy" values="58;86;58" dur="6s" repeatCount="indefinite"/></circle>
-      <circle cx="1055" cy="55" r="32"><animate attributeName="cy" values="55;80;55" dur="5s" repeatCount="indefinite"/></circle>
-    </g>
-    <rect x="-320" y="0" width="240" height="220" fill="url(#shine)" transform="skewX(-18)">
-      <animate attributeName="x" values="-320;1320" dur="4.5s" repeatCount="indefinite"/>
-    </rect>
-    <text x="600" y="100" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#ffffff">NarneTech Software Solutions</text>
-    <text x="600" y="144" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#eaf6ff" letter-spacing="1.5">Intelligent Software  ·  Industrial IoT  ·  Digital Solutions</text>
+
+  <g clip-path="url(#winH)">
+    <!-- window body -->
+    <rect x="0" y="0" width="1200" height="220" fill="#0b1221"/>
+    <!-- title bar -->
+    <rect x="0" y="0" width="1200" height="46" fill="#141d33"/>
+    <line x1="0" y1="46" x2="1200" y2="46" stroke="#1f2a44" stroke-width="1"/>
+    <!-- traffic lights -->
+    <circle cx="30" cy="23" r="6.5" fill="#ff5f56"/>
+    <circle cx="54" cy="23" r="6.5" fill="#ffbd2e"/>
+    <circle cx="78" cy="23" r="6.5" fill="#27c93f"/>
+    <text x="110" y="28" font-family="'JetBrains Mono','Fira Code',Consolas,Monaco,monospace" font-size="14" fill="#7d8aa3">narnetech@github: ~/profile</text>
   </g>
+
+  <!-- prompt -->
+  <text x="40" y="122" font-family="'JetBrains Mono','Fira Code',Consolas,Monaco,monospace" font-size="28" font-weight="700" fill="#36c5ff">&gt;</text>
+
+  <!-- typed text (revealed by clip) -->
+  <text x="80" y="122" clip-path="url(#typeH)" font-family="'JetBrains Mono','Fira Code',Consolas,Monaco,monospace" font-size="28" font-weight="600" fill="#ffffff">NarneTech Software Solutions</text>
+
+  <!-- blinking cursor that follows typing -->
+  <rect y="100" width="13" height="28" fill="#36c5ff">
+    <animate attributeName="x" values="80;550;550;80;80" keyTimes="0;0.42;0.64;0.82;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- comment subtitle -->
+  <text x="40" y="170" font-family="'JetBrains Mono','Fira Code',Consolas,Monaco,monospace" font-size="18" fill="#6ee7b7">// Intelligent Software · Industrial IoT · Digital Solutions</text>
 </svg>
