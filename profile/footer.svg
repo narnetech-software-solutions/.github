@@ -1,29 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" role="img" aria-label="Let's build something that lasts">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" role="img" aria-label="NarneTech terminal footer">
   <defs>
-    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00C6FF">
-        <animate attributeName="stop-color" values="#00C6FF;#0078D7;#004e94;#0078D7;#00C6FF" dur="7s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#004e94">
-        <animate attributeName="stop-color" values="#004e94;#0078D7;#00C6FF;#0078D7;#004e94" dur="7s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-    <linearGradient id="fshine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.20"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="fround"><rect x="0" y="0" width="1200" height="150" rx="18"/></clipPath>
+    <clipPath id="winF"><rect x="2" y="2" width="1196" height="146" rx="14"/></clipPath>
+    <clipPath id="typeF">
+      <rect x="80" y="58" width="0" height="34">
+        <animate attributeName="width" values="0;430;430;0;0" keyTimes="0;0.42;0.66;0.84;1" dur="7.5s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
   </defs>
-  <g clip-path="url(#fround)">
-    <rect width="1200" height="150" fill="url(#fbg)"/>
-    <path fill="#ffffff" opacity="0.10" d="M-200 60 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 q50 -18 100 0 q50 18 100 0 V0 H-200 Z">
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="6s" repeatCount="indefinite"/>
-    </path>
-    <rect x="-320" y="0" width="240" height="150" fill="url(#fshine)" transform="skewX(-18)">
-      <animate attributeName="x" values="-320;1320" dur="5s" repeatCount="indefinite"/>
-    </rect>
-    <text x="600" y="78" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#ffffff" letter-spacing="0.5">Let's build something that lasts.</text>
-    <text x="600" y="108" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#eaf6ff">narnetech.com  ·  contact@narnetech.com  ·  +91 888 525 8951</text>
+
+  <g clip-path="url(#winF)">
+    <rect x="0" y="0" width="1200" height="150" fill="#0b1221"/>
+    <rect x="0" y="0" width="1200" height="42" fill="#141d33"/>
+    <line x1="0" y1="42" x2="1200" y2="42" stroke="#1f2a44" stroke-width="1"/>
+    <circle cx="30" cy="21" r="6" fill="#ff5f56"/>
+    <circle cx="52" cy="21" r="6" fill="#ffbd2e"/>
+    <circle cx="74" cy="21" r="6" fill="#27c93f"/>
+    <text x="104" y="26" font-family="'JetBrains Mono','Fira Code',Consolas,Monaco,monospace" font-size="13" fill="#7d8aa3">narnetech@github: ~$</text>
   </g>
+
+  <text x="40" y="84" font-family="'JetBrains Mono','Fira Code',Consolas,Monaco,monospace" font-size="22" font-weight="700" fill="#36c5ff">&gt;</text>
+  <text x="80" y="84" clip-path="url(#typeF)" font-family="'JetBrains Mono','Fira Code',Consolas,Monaco,monospace" font-size="22" font-weight="600" fill="#ffffff">Let's build something that lasts.</text>
+  <rect y="65" width="11" height="22" fill="#36c5ff">
+    <animate attributeName="x" values="80;505;505;80;80" keyTimes="0;0.42;0.66;0.84;1" dur="7.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" dur="0.9s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="40" y="120" font-family="'JetBrains Mono','Fira Code',Consolas,Monaco,monospace" font-size="14" fill="#6ee7b7">// narnetech.com · contact@narnetech.com · +91 888 525 8951</text>
 </svg>
