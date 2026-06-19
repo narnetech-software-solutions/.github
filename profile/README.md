@@ -7,7 +7,7 @@
 <!-- ===== ANIMATED HEADER ===== -->
 <div align="center">
 
-<img src="./header.svg" width="100%" alt="NarneTech Software Solutions"/>
+<img src="./header.svg?v=2" width="100%" alt="NarneTech Software Solutions"/>
 
 <br/>
 
@@ -99,6 +99,6 @@ PlantPulse turns raw machine and energy data into actionable intelligence for in
 <!-- ===== ANIMATED FOOTER ===== -->
 <div align="center">
 
-<img src="./footer.svg" width="100%" alt="Let's build something that lasts"/>
+<img src="./footer.svg?v=2" width="100%" alt="Let's build something that lasts"/>
 
 </div>
